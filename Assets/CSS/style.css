@@ -1,0 +1,169 @@
+/*----------------------------
+General
+-----------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0; margin: 0;
+}
+
+html,body {
+  display: block;
+  height: 100%; width: 100%;
+  overflow: auto;
+}
+
+ul,li,a {
+  margin: 0; padding: 0;
+  list-style:none;
+  text-decoration: none;
+}
+
+
+/*----------------------------
+Template
+-----------------------------*/
+
+.wrapper {
+  padding: 20px 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+  grid-template-areas:  "me menu"
+                        "me container"
+                        "me footer";
+}
+
+.me {
+  grid-area: me;
+}
+
+.logo, .presentation, .phone, .mail, .hobbies{
+  background-color: #fbb03b;
+  text-align: center;
+  height: AUTO;
+}
+
+.logo {
+  grid-area: logo;
+  padding-top: 20px;
+}
+
+i {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+i:hover {
+  color: #000;
+}
+
+.presentation {
+  grid-area: presentation;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.mail {
+  grid-area: mail;
+}
+
+.hobbies {
+  grid-area: hobbies;
+}
+
+.container {
+  grid-area: container;
+}
+
+.professional-skills, .work-experience, .formation, .study, .contact, .footer {
+    background-color: #FFF;
+    padding: 10px;
+    margin: 10px;
+}
+
+.professional-skills h2, .work-experience h2, .formation h2, .study h2, .contact h2 {
+    color: #565352;
+}
+
+.professional-skills p, .work-experience p, .formation p, .study p {
+  padding: 5px;
+}
+
+.professional-skills {
+  grid-area: professional-skills;
+}
+
+.professional-skills progress {
+  margin-left: 20px;
+}
+
+.work-experience {
+  grid-area: work-experience;
+}
+
+.formation {
+  grid-area: formation;
+}
+
+.study {
+  grid-area: study;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+
+/*----------------------------
+Menu
+-----------------------------*/
+
+.menu {
+  grid-area: menu;
+  background-color: #fbb03b;
+  height: 30px;
+	overflow: hidden;
+	display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu a {
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000;
+  padding: 0 10px 0 10px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #fbb03b;
+  background-color: #fff;
+}
+
+
+/*----------------------------
+Contenu Me
+-----------------------------*/
+
+.me {
+  color: #f2f2f2;
+}
