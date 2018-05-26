@@ -2,52 +2,73 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <title>CV Cedric Fournier</title>
   </head>
   <body>
-    <div class="wrapper">   
-      <div class="menu">	  
-        <a href="#home">Home</a>
-        <a href="#about">Présentation</a>
-        <a href="#contact">Contact</a>
-      </div>	
-	  
-      <div class="container">
-		<div class="me">
-			<div class="logo">
-				<img src="./Assets/images/Cedric-Fournier.png" alt="Avatar" width="150" height="150">
-			</div>
-			<div class="presentation">
-				<a href="#linkedin"><i class="fab fa-linkedin fa-3x"></i></a>
-				<a href="#github"><i class="fab fa-github-square fa-3x"></i></a>
-				<p>Je me nomme Cédric Fournier, j'ai 29 ans et je suis née le 08 juin 1988.</p>
-			</div>
-			<div class="phone">
-				<p>+0032(0)499 90 76 49</p>
-			</div>
-			<div class="mail">
-				<p>cedricfournier.pro@gmail.com</p>
-			</div>
-			<div class="hobbies">
-				<p></p>
-			</div>
-		</div>
-	  
+    <div class="wrapper">
+      <header>
+        <nav class="menu">
+          <a href="#" class="titleWeb">Cédric Fournier</a>
+          <ul>
+            <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main">
+        <div class="me">
+          <div class="logo">
+            <img src="./Assets/images/Cedric-Fournier.png" alt="Avatar">
+          </div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/cedric-fournier-09954a163/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="https://github.com/Cedric-Fournier" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+          </div>
+          <div class="presentation">
+            <i class="fas fa-user" title="user"></i><p>Cédric Fournier, né le 08 juin 1988,domicilié à Bruxelles</p>
+          </div>
+          <div class="border"></div>
+          <div class="phone">
+            <i class="fas fa-phone" title="phone"></i><p>+0032(0)499 90 76 49</p>
+          </div>
+          <div class="border"></div>
+          <div class="mail">
+            <i class="fas fa-envelope" title="mail"></i><br><a href="mailto:cedricfournier.pro@gmail.com">cedricfournier.pro@gmail.com</a>
+          </div>
+          <div class="border"></div>
+          <div class="hobbies">
+            <p>My Hobbies</p>
+            <i class="fas fa-music" title="Music"></i>
+            <i class="fas fa-code" title="Developer"></i>
+            <i class="fas fa-film" title="Movies"></i>
+            <i class="fas fa-futbol" title="Soccer"></i>
+            <i class="fas fa-plane" title="Travel"></i>
+            <i class="fas fa-gamepad" title="Games"></i>
+          </div>
+        </div>
         <div class="professional-skills">
-          <h2>Professional Skills</h2>
-          <p><i class="fab fa-html5 fa-2x" style="color:#F8602A;"title="HTML"></i> HTML</p> <progress value="95" max="100"></progress>
-          <p><i class="fab fa-css3-alt fa-2x" style="color:#2788D1;" title="CSS"></i> CSS</p> <progress value="90" max="100"></progress>
-          <p><i class="fab fa-php fa-2x fa-2x" style="color:#8372B6;" title="PHP"></i> PHP</p> <progress value="30" max="100"></progress>
-          <p><i class="fab fa-js fa-2x"  style="color:#EFBE23;" title="Javascript"></i> Javascript</p> <progress value="35" max="100"></progress>
-
-          <p><img src="./Assets/images/ionic.png" width="30px" alt="Ionic" title="Ionic"> Ionic</p> <progress value="20" max="100"></progress>
-          <p><i class="fab fa-angular fa-2x" style="color:#E41E34" title="Angular.js"></i> Angular.js</p> <progress value="20" max="100"></progress>
-          <p><img src="./Assets/images/firebase.png" width="30px" alt="Firebase" title="Firebase"> Firebase</p> <progress value="30" max="100"></progress>
-          <p><i class="fab fa-python fa-2x" style="color:#89A396" title="Python"></i> Python</p> <progress value="10" max="100"></progress>
+          <div class="skillTitle"><h2>Professional Skills</h2></div>
+          <div class="skillOne">
+            <p><i class="fab fa-html5 fa-2x" style="color:#F8602A;"title="HTML"></i> HTML</p><div class="progress pHTML"></div>
+            <p><i class="fab fa-css3-alt fa-2x" style="color:#2788D1;" title="CSS"></i> CSS</p><div class="progress pCSS"></div>
+            <p><i class="fab fa-php fa-2x fa-2x" style="color:#8372B6;" title="PHP"></i> PHP</p><div class="progress pPHP"></div>
+          </div>
+          <div class="skillTwo">
+            <p><i class="fab fa-js fa-2x"  style="color:#EFBE23;" title="Javascript"></i> Javascript</p><div class="progress pJAVASCRIPT"></div>
+            <p><img src="./Assets/images/ionic.png" width="30px" alt="Ionic" title="Ionic"> Ionic</p><div class="progress pIONIC"></div>
+            <p><i class="fab fa-angular fa-2x" style="color:#E41E34" title="Angular.js"></i> Angular.js</p><div class="progress pANGULAR"></div>
+          </div>
+          <div class="skillThree">
+            <p><img src="./Assets/images/firebase.png" width="30px" alt="Firebase" title="Firebase"> Firebase</p><div class="progress pFIREBASE"></div>
+            <p><i class="fab fa-python fa-2x" style="color:#89A396" title="Python"></i> Python</p><div class="progress pPYTHON"></div>
+          </div>
         </div>
         <div class="work-experience">
           <h2>Work Experience</h2>
@@ -76,9 +97,11 @@
           </form>
         </div>
       </div>
-      <div class="footer">
-        <p>Cedric Fournier Copyright © 2018</p>
-      </div>
+      <footer>
+        <div class="footer">
+          <p>Cedric Fournier Copyright © 2018</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
